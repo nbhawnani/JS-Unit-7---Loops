@@ -28,14 +28,14 @@ console.log(array1[i] + 1)
 const nums = [1,2,3,4,5]
 // with forEach loop
 nums.forEach(item => {
-console.log("Item:",item )
+console.log("element is:",item )
 })
-// Output:
-2,3,4,5,6
+
 
 */
 
 // For Each - value, index, array itself 
+/*
 const numbers = [45, 4, 9, 16, 25];
 
 let txt = "";
@@ -45,6 +45,7 @@ function myFunction(value, index, array) {
   console.log( "Value at index position:",index,"is:",value + " of the array:",array,"\n");
   
 }
+*/
 
 /*
 // For in : gives you the index positions 
@@ -57,5 +58,38 @@ for (let x in numbers) {
 console.log(txt)
 */
 
+/*
+// For of - lets you access the values of the elements of the array directly.
 
+const cars = ["BMW", "Volvo", "Mini"];
+
+let text = "";
+for (let x of cars) {
+  text +=   x + "\n";
+}
+console.log(text)
+*/
+
+/*
+// while condition is true execute a piece of code
+let text="",i=0;
+while (i < 10) {
+  text += "The number is " + i + "\n";
+  i++;
+}
+console.log(text);
+*/
+
+// Do .. while loop : condition is checked after atleast 1 instance of the code has run
+
+let text="";
+let i=0;
+
+do {
+  text += "The number is " + i + "\n";
+  i++;
+}
+while (i < 10);
+
+console.log(text);
 

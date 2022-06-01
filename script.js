@@ -2,6 +2,7 @@
 for (let step = 0; step < 5; step++) {
 // Runs 5 times, with values of step 0 through 4.
 console.log('Walking east one step', step);
+continue;
 }
 
 
@@ -21,6 +22,7 @@ console.log(array1[i] + 1)
 2,3,4,5,6
 
 // break command comes out of the loop execution:
+// continue command comes out of that instance but proceeds onto the next loop instance
 */
 
 /*
@@ -81,15 +83,11 @@ console.log(text);
 */
 
 // Do .. while loop : condition is checked after atleast 1 instance of the code has run
-
-let text="";
-let i=0;
-
+let text="",  i=0;
 do {
   text += "The number is " + i + "\n";
   i++;
 }
 while (i < 10);
-
 console.log(text);
 
